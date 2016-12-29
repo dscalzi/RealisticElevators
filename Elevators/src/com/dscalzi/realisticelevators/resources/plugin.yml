@@ -1,0 +1,13 @@
+author: Daniel Scalzi
+description: Create and use realistic elevators in Minecraft.
+main: com.dscalzi.realisticelevators.Main
+name: RealisticElevators
+version: AvSoft 1.11.2-R0.1-SNAPSHOT
+depend: [WorldEdit]
+commands:
+  realisticelevators:
+    description: Use to access the plugin's subcommands.
+    aliases: [re, elevators]
+permissions:
+  realisticelevators.use:
+    default: OP
