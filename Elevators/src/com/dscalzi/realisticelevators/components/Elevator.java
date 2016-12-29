@@ -1,6 +1,5 @@
 package com.dscalzi.realisticelevators.components;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -68,12 +67,12 @@ public class Elevator implements ConfigurationSerializable{
 
 	@Override
 	public Map<String, Object> serialize() {
-		Map<String, Object> data = new HashMap<String, Object>();
+		Map<String, Object> data = new LinkedHashMap<String, Object>();
 		
 		data.put("name", name);
 		data.put("lift_material", liftMaterial.toString());
 		
-		Map<String, Object> floorData = new HashMap<String, Object>();
+		Map<String, Object> floorData = new LinkedHashMap<String, Object>();
 		for(Map.Entry<Integer, Floor> entry : levels.entrySet()){
 			floorData.put(String.valueOf(entry.getValue().getNumber()), entry.getValue().serialize());
 		}

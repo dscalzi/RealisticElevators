@@ -1,4 +1,4 @@
-package com.dscalzi.realisticelevators;
+package com.dscalzi.realisticelevators.util;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,6 +7,7 @@ import java.util.List;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
+import com.dscalzi.realisticelevators.Main;
 import com.dscalzi.realisticelevators.components.Elevator;
 
 public final class StorageManager {

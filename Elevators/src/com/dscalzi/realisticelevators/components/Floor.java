@@ -1,7 +1,7 @@
 package com.dscalzi.realisticelevators.components;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -96,14 +96,14 @@ public class Floor implements ConfigurationSerializable{
 
 	@Override
 	public Map<String, Object> serialize(){
-		Map<String, Object> data = new HashMap<String, Object>();
+		Map<String, Object> data = new LinkedHashMap<String, Object>();
 		
 		data.put("number", number);
 		data.put("y", yLevel);
 		data.put("move_button", moveButton.serialize());
 		data.put("summon_button", summonButton.serialize());
 		
-		Map<String, Object> activeFloorLightsData = new HashMap<String, Object>();
+		Map<String, Object> activeFloorLightsData = new LinkedHashMap<String, Object>();
 		for(int i=0; i<activeFloorLights.size(); ++i)
 			activeFloorLightsData.put(String.valueOf(i), activeFloorLights.get(i).serialize());
 		
