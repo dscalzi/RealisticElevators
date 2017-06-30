@@ -7,6 +7,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
+import com.dscalzi.realisticelevators.command.sub.Create;
 import com.dscalzi.realisticelevators.command.sub.Reload;
 import com.dscalzi.realisticelevators.util.MessageManager;
 
@@ -16,6 +17,7 @@ public class MainCommandExecutor implements CommandExecutor{
 	
 	public MainCommandExecutor(){
 		subCommandRegistry = new HashMap<String, SubCommandExecutor>();
+		subCommandRegistry.put("create", new Create());
 		subCommandRegistry.put("reload", new Reload());
 	}
 	
