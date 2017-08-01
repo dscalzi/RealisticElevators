@@ -2,7 +2,7 @@ author: Daniel Scalzi
 description: Create and use realistic elevators in Minecraft.
 main: com.dscalzi.realisticelevators.Main
 name: RealisticElevators
-version: AvSoft 1.11.2-R0.1-SNAPSHOT
+version: 0.3.0
 depend: [WorldEdit]
 commands:
   realisticelevators:

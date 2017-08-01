@@ -2,9 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.dscalzi</groupId>
   <artifactId>RealisticElevators</artifactId>
-  <version>AvSoft 1.11.2-R0.1-SNAPSHOT</version>
+  <version>0.3.0</version>
   <name>Realistic Elevators</name>
-  <description>Create and use realistic elevators in Minecraft</description>
+  <description>Create and use realistic elevators in Minecraft.</description>
+  
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   
   <developers>
       <developer>
@@ -23,12 +27,11 @@
   
   <build>
     <defaultGoal>package</defaultGoal>
-    <finalName>Elevators</finalName>
-    <sourceDirectory>src</sourceDirectory>
+    <finalName>RealisticElevators</finalName>
     <resources>
        <resource>
-            <targetPath>.</targetPath>
-            <directory>${basedir}/src/com/dscalzi/realisticelevators/resources/</directory>
+            <directory>src/main/resources</directory>
+            <filtering>true</filtering>
         </resource>
     </resources>
     <plugins>
